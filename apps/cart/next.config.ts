@@ -7,8 +7,8 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
+  basePath: '/cart'
   
-
 };
 
 export default withNextIntl(nextConfig);
