@@ -6,6 +6,8 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   /* config options here */
+    allowedOrigins: ["https://next-auth-h9c5.vercel.app/"],
+
   async rewrites() {
     return [
       {
