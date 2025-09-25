@@ -8,11 +8,11 @@ const nextConfig = {
     return [
       {
         source: '/en/cart/:path*',
-        destination: 'https://next-auth-8sjz.vercel.app/cart/:path*',
+        destination: 'https://next-auth-8sjz.vercel.app/en/cart/:path*',
       },
       {
         source: '/tr/cart/:path*',
-        destination: 'https://next-auth-8sjz.vercel.app/cart/:path*',
+        destination: 'https://next-auth-8sjz.vercel.app/en/cart/:path*',
       },
     ];
   },
