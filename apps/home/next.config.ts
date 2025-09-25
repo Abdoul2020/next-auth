@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         source: '/tr/cart/:path*',
-        destination: 'https://next-auth-8sjz.vercel.app/en/cart/:path*',
+        destination: 'https://next-auth-8sjz.vercel.app/tr/cart/:path*',
       },
     ];
   },
