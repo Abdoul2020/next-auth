@@ -8,13 +8,13 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: 'cart/en/cart/:path*',
-        destination: 'https://next-auth-8sjz.vercel.app/cart/:path*',
+        source: '/en/cart/:path*',
+        destination: 'https://next-auth-8sjz.vercel.app/cart/en/cart/:path*',
       },
       {
-        source: 'cart/tr/cart/:path*',
-        destination: 'https://next-auth-8sjz.vercel.app/cart/:path*',
-      },
+        source: '/en/cart',
+        destination: 'https://next-auth-8sjz.vercel.app/cart/en/cart',
+      }
     ];
   },
   
