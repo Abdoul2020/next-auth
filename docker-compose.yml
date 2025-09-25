@@ -1,0 +1,40 @@
+services:
+  home:
+    env_file:
+      - ./apps/home/.env.local
+    build: ./apps/home
+    container_name: mh_home
+    networks:
+      - mf_net
+    expose:
+      - "3000"
+    restart: unless-stopped
+
+  cart:
+    env_file:
+      - ./apps/cart/.env.local
+    build: ./apps/cart
+    container_name: mh_cart
+    networks:
+      - mf_net
+    expose:
+      - "3000"
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    container_name: mf_nginx
+    depends_on:
+      - home
+      - cart
+    ports:
+      - "8080:80"     # access via http://localhost:8080
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - mf_net
+    restart: unless-stopped
+
+networks:
+  mf_net:
+    driver: bridge

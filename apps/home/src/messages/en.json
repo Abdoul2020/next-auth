@@ -1,0 +1,19 @@
+{
+    "products": "Products",
+    "cart": "Cart",
+    "signin": "Sign in",
+    "Header": {
+        "products": "Products",
+        "home":"Home",
+        "cart": "Cart",
+        "products listing": "Products Listing"
+      },
+      "Footer": {
+        "products": "Products",
+        "home":"Home",
+        "cart": "Cart",
+        "copyright":"copyright"
+      }
+    
+  }
+  

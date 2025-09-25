@@ -1,0 +1,19 @@
+{
+
+    "products": "Ürünler",
+    "cart": "Sepet",
+    "signin": "Giriş yap",
+    "Header": {
+    "products": "Ürünler",
+    "home":"Ana Sayfa",
+    "cart": "Sepet",
+    "products listing": "Ürün Listemesi"
+  },
+  "Footer": {
+    "products": "Ürünler",
+    "home":"Ana Sayfa",
+    "cart": "Sepet",
+    "copyright": "copyright"
+  }
+    
+  }  
